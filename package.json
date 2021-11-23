@@ -1,0 +1,22 @@
+{
+  "name": "hex-game",
+  "version": "1.0.0",
+  "description": "Simple online game where you guess the color the hex color code represents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaseryllesison/hex-game.git"
+  },
+  "author": "chasey sison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaseryllesison/hex-game/issues"
+  },
+  "homepage": "https://github.com/chaseryllesison/hex-game#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
