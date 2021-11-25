@@ -5,6 +5,8 @@ const ejsMate = require('ejs-mate');
 
 const port = 3000;
 
+app.use(express.static(__dirname + '/public'));
+
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
