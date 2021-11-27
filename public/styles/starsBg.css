@@ -25,3 +25,7 @@ body, html {
 #container canvas, #overlay {
     position: absolute;
 }
+
+#overlay {
+    margin-top: 200px;
+}
