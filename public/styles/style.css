@@ -1,0 +1,16 @@
+.pad {
+    height: 100px;
+    width: 100px;
+}
+
+#container {
+    position: relative;
+}
+
+#container canvas, #overlay {
+    position: absolute;
+}
+
+#overlay {
+    margin-top: 275px;
+}
