@@ -12,11 +12,15 @@
 }
 
 .color-pad {
-    width: 100px;
-    height: 100px;
+    width: 6rem;
+    height: 6rem;
     background-color: chocolate;
 }
 
-.col {
-    padding-bottom: 10px;
+div.col {
+    padding-bottom: 20px;
+}
+
+h1{
+    margin: 0.3em;
 }
