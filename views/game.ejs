@@ -3,10 +3,20 @@
 <div id="overlay" class="container position-absolute top-100 start-50 translate-middle text-center">
     <div class="row mb-3 mt-3">
         <span class="col rounded-pill" id="color-indicator">
-            <h1>col 1</h1>
+            <h1>color</h1>
         </span>
     </div>
-    <div class="row">
+
+    <% for(let i=0; i<difficulty; i++) { %>
+        <div class="row">
+            <% for(let x=0; x<3; x++) { %>
+                <div class="col">
+                    <div class="m-auto rounded-circle color-pad"> color </div>
+                </div>
+            <% } %>
+        </div>
+    <% } %> 
+    <!-- <div class="row">
         <div class="col">
             <div class="m-auto rounded-circle color-pad"> color </div>
         </div>
@@ -39,4 +49,4 @@
             <div class="m-auto rounded-circle color-pad"> color </div>
         </div>
     </div>
-</div>
+</div> -->

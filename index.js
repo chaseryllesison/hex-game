@@ -15,8 +15,9 @@ app.get('/', (req, res) => {
     res.render('landingPage');
 });
 
-app.get('/game', (req, res) => {
-    res.render('game');
+app.get('/game/:difficulty', (req, res) => {
+    const difficulty = req.params.difficulty;
+    res.render('game', {difficulty});
 });
 
 app.listen(port,() => {
