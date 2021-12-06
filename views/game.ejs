@@ -7,11 +7,13 @@
         </span>
     </div>
 
-    <% for(let i=0; i<difficulty; i++) { %>
+    <% var index = 0; %>
+    <% for(var i=0; i<difficulty; i++) { %>
         <div class="row">
-            <% for(let x=0; x<3; x++) { %>
+            <% for(var x=0; x<3; x++) { %>
                 <div class="col">
-                    <div class="m-auto rounded-circle color-pad"> color </div>
+                    <div class="m-auto rounded-circle color-pad" style="background-color: #<%=randomColors[index]%>;"> <%= randomColors[index] %> </div>
+                    <% index++ %>
                 </div>
             <% } %>
         </div>

@@ -5,6 +5,7 @@ const ejsMate = require('ejs-mate');
 
 const port = 3000;
 
+Math.floor(Math.random()*16777215).toString(16);
 app.use(express.static(__dirname + '/public'));
 
 app.engine('ejs', ejsMate);
@@ -17,7 +18,12 @@ app.get('/', (req, res) => {
 
 app.get('/game/:difficulty', (req, res) => {
     const difficulty = req.params.difficulty;
-    res.render('game', {difficulty});
+    const randomColors = [];
+    for(var i=0; i<difficulty*3; i++){
+        randomColors.push(Math.floor(Math.random()*16777215).toString(16));
+    }
+    console.log(randomColors);
+    res.render('game', {difficulty, randomColors});
 });
 
 app.listen(port,() => {
