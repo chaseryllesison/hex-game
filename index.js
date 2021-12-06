@@ -20,7 +20,7 @@ app.get('/game/:difficulty', (req, res) => {
     const difficulty = req.params.difficulty;
     const randomColors = [];
     for(var i=0; i<difficulty*3; i++){
-        randomColors.push(Math.floor(Math.random()*16777215).toString(16));
+        randomColors.push([...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join(''));
     }
     console.log(randomColors);
     res.render('game', {difficulty, randomColors});
