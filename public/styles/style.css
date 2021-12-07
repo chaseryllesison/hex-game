@@ -28,3 +28,9 @@ h1{
     background-color: grey;
     margin-top: 600px;
 }
+
+.color-pad:hover {
+    box-shadow: 0 0 15px #ffffff;
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
