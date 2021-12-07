@@ -19,5 +19,8 @@
         </div>
     <% } %> 
 
-<!-- <script>const pickedColor = `#${randomColors[pickedColorIndex]}` </script> -->
+<script>
+    const pickedColor = '<%- randomColors[pickedColorIndex] %>';
+    const colors = '<%- JSON.stringify(randomColors)%>';
+</script>
 <script src="/scripts/gameScript.js"></script>
