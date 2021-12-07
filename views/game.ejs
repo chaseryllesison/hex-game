@@ -3,7 +3,7 @@
 <div id="overlay" class="container position-absolute top-100 start-50 translate-middle text-center">
     <div class="row mb-3 mt-3">
         <span class="col rounded-pill" id="color-indicator">
-            <h1>color</h1>
+            <h1>#<%= randomColors[pickedColorIndex] %></h1>
         </span>
     </div>
 
@@ -12,7 +12,7 @@
         <div class="row">
             <% for(var x=0; x<3; x++) { %>
                 <div class="col">
-                    <div class="m-auto rounded-circle color-pad" style="background-color: #<%=randomColors[index]%>;"> <%= randomColors[index] %> </div>
+                    <div class="m-auto rounded-circle color-pad" style="background-color: #<%=randomColors[index]%>;"> </div>
                     <% index++ %>
                 </div>
             <% } %>

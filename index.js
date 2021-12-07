@@ -22,8 +22,9 @@ app.get('/game/:difficulty', (req, res) => {
     for(var i=0; i<difficulty*3; i++){
         randomColors.push([...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join(''));
     }
-    console.log(randomColors);
-    res.render('game', {difficulty, randomColors});
+    const pickedColorIndex = Math.floor(Math.random() * randomColors.length);
+    console.log(pickedColorIndex);
+    res.render('game', {difficulty, randomColors, pickedColorIndex});
 });
 
 app.listen(port,() => {
