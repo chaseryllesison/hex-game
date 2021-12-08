@@ -7,9 +7,10 @@ var colorPads = document.querySelectorAll(".color-pad");
 colorPads.forEach(element => {
     element.onclick = () => {
         if(element.id == pickedColor) {
-            console.log("IT'S A MATCH!");
+            document.querySelector("#color-indicator").style.backgroundColor = `#${pickedColor}`;
+            
         } else {
-            console.log("FAIL");
+            element.style.display = "none";
         }
     }    
 });
