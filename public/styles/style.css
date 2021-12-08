@@ -34,3 +34,7 @@ h1{
     transition-duration: 0.3s;
     cursor: pointer;
   }
+
+  #popUp {
+      visibility: hidden;
+  }
