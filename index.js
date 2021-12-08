@@ -23,7 +23,6 @@ app.get('/game/:difficulty', (req, res) => {
         randomColors.push([...Array(6)].map(() => Math.floor(Math.random() * 16).toString(16)).join(''));
     }
     const pickedColorIndex = Math.floor(Math.random() * randomColors.length);
-    console.log(pickedColorIndex);
     res.render('game', {difficulty, randomColors, pickedColorIndex});
 });
 
