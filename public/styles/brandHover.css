@@ -1,0 +1,36 @@
+.wrap {
+  width: 100%;
+  text-align: center;
+}
+.gradient-text {
+  font-family: 'Source Serif Pro', serif;
+  background: linear-gradient(to right, crimson, pink, springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: white;
+  font-size: 6rem;
+  width: 80vw;
+  margin: 30vh auto;
+  margin-top: 500px;
+  display: block;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+  font-weight: 900;
+}
+.gradient-text:hover {
+  color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}

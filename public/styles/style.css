@@ -38,3 +38,9 @@ h1{
   #popUp {
       visibility: hidden;
   }
+
+  .navbar-brand {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.5em;
+  }
+

@@ -1,10 +1,14 @@
 <% layout('layouts/boilerplate') %>
 
-<div id="overlay" class="container">
-    <h1>Landing page</h1>
-    <a href="/game/1">Easy</a>
-    <a href="/game/2">Intermediate</a>
-    <a href="/game/3">Hard</a>
+<div id="overlay" class="container mt-5 position-absolute top-100 start-50 translate-middle text-center" style="width: max-content;">
     
+    <div class="wrap">
+        <h1 class="gradient-text">Hex Game</h1>
+    </div>
+    <div class="d-flex justify-content-evenly">
+        <a href="/game/1"><button class="btn btn-outline-success btn-lg rounded-pill">Easy</button></a>
+        <a href="/game/2"><button class="btn btn-outline-primary btn-lg rounded-pill">Intermediate</button></a>
+        <a href="/game/3"><button class="btn btn-outline-danger btn-lg rounded-pill">Hard</button></a>
+    </div>
 </div>
 
