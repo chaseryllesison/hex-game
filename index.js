@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const ejsMate = require('ejs-mate');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 Math.floor(Math.random()*16777215).toString(16);
 app.use(express.static(__dirname + '/public'));
